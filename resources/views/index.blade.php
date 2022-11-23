@@ -69,7 +69,7 @@
             @foreach($protfolios as $protfolio)
             <div class="col-lg-4 col-sm-6">
                 <a class="portfolio-box" href="{{asset('storage/'.$protfolio->image)}}" title="{{$protfolio->title}}">
-                    <img class="img-fluid" src="{{asset('img/portfolio/thumbnails/'.$protfolio->image)}}" alt="..." />
+                    <img class="img-fluid" src="{{asset('storage/'.$protfolio->image)}}" alt="..." />
                     <div class="portfolio-box-caption">
                         <div class="project-category text-white-50">Category</div>
                         <div class="project-name">{{$protfolio->title}}</div>
